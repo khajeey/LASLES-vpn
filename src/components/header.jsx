@@ -1,10 +1,11 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Header() {
+    const navigate = useNavigate()
     return(
         
             <div className="max-w-[1200px] mt-[50px] mx-auto flex justify-between py-[20px]">
-                <img src="/logo.png" alt="" />
+                <img className="cursor-pointer" onClick={() => navigate("/")} src="/logo.png" alt="" />
                 <ul className="flex items-center gap-6 text-gray-600  ">
                     <Link to="/about" className="hover:text-gray-950 cursor-pointer "> About</Link>
                     <Link to="/features" className="hover:text-gray-950 cursor-pointer "> Features</Link>
