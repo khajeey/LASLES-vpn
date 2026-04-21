@@ -4,7 +4,7 @@ import Footer from "./components/footer";
 import Header from "./components/header";
 import Home from "./components/home";
 import Pricing from "./components/pricing";
-import Testimonials from "./components/Testimonials";
+import Testimonials from "./components/testim";
 
 export default function App() {
   return(
@@ -16,7 +16,7 @@ export default function App() {
         <Route  path="/" element={<Home/>} />
         <Route  path="/about" element={<About/>} />
         <Route  path="/pricing" element={<Pricing/>} />
-        <Route  path="/testimonials" element={<Testimonials/>} />
+        <Route  path="/testim" element={<Testimonials/>} />
                
       </Routes>
       <Footer/>
